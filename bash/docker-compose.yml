@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+    bash:
+        image: bash:latest
+        volumes:
+            - ${MNTDIR}:/workspace
+        working_dir: /workspace
